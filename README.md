@@ -22,5 +22,5 @@
 ### PlayerでもMobでも、どちらもでも行けます！
 
 ```mcfunction
-/execute as <対象> at @s run function reizo_motion_lib:pounce_on/_
+/execute as <対象> at @s run function #reizo_motion_lib:pounce_on
 ```
