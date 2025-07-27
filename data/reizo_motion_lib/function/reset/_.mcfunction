@@ -1,4 +1,9 @@
 
+# resetする前に...DebugModeのやつがいたら値を格納。
+execute \
+if entity @a[tag=reizo_Motion_lib.DebugMode] run \
+function reizo_motion_lib:debug/for_viewing
+
 # いろいろリセット。
 scoreboard players reset $KnokBackX
 scoreboard players reset $KnokBackY
