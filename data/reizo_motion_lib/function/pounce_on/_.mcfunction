@@ -12,7 +12,7 @@ scoreboard players set $MotionPower reizo_Motion_lib.Temp 125
     execute \
     positioned 0.0 0.0 0.0 \
     rotated as @s run \
-    summon area_effect_cloud ^ ^ ^0.4 {Tags:["reizo_Motion_lib.Pos_Get_AEC"]}
+    summon area_effect_cloud ^ ^ ^0.4 {Tags:["reizo_Motion_lib.Pos_Get_AEC"],Particle:{type:"block",block_state:"air"},Duration:1}
     # Pos_Get_AECのPosを取得。
     data modify storage reizo_motion_lib:_ Pos set from entity @e[type=area_effect_cloud,tag=reizo_Motion_lib.Pos_Get_AEC,sort=nearest,limit=1] Pos
 #> AECのPosを補正計算させるために、スコアに反映しなければならない。ここでMobとPlayerで分岐
